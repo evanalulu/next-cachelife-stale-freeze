@@ -1,0 +1,18 @@
+{
+  "setupTasks": [
+    {
+      "name": "Install Dependencies",
+      "command": "npm ci"
+    }
+  ],
+  "tasks": {
+    "start": {
+      "name": "build and start",
+      "command": "npm run build && npm start",
+      "runAtStart": true,
+      "restartOn": {
+        "clone": true
+      }
+    }
+  }
+}
